@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            background-color: #ccff99; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid red;
+            text-align: center;
+        }
+
+        #btn{
+            padding: 10px 30px 10px 30px;
+            border-radius: 2px;
+            border: none;
+            background-color: orange;
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2 style="color: red;">Personal Detail</h2>
+
+            <label class="detail" for="name">Name:</label>
+            <input type="text" name="name">
+            <br>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+            <br>
+            <br>
+
+            <label for="gender">Gender:</label>
+
+            <input type="radio" name="gender" >
+            <label for="gender">Male</label>
+
+            <input type="radio" name="gender" >
+            <label for="gender">Female</label>
+            <br>
+            <br>
+
+            <label for="contact">Contact</label>
+            <input type="number">
+            <br>
+
+            <h2 style="color: red;">Educational Qualification</h2>
+
+            <label for="Degree">Degree:</label>
+            <select name="Degree" id="deg" >
+                <option  value="">-- Select Group --</option>
+                <option value="bsc">B.Sc</option>
+                <option value="bcom">B.Com</option>
+                <option value="ba">B.A</option>
+                <option value="btech">B.Tech</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="engineering">Engineering:</label>
+            <select name="engineering" id="eng" >
+                <option  value="">-- Select Group --</option>
+                <option value="cse">Computer Science</option>
+                <option value="ece">Electronics</option>
+                <option value="mech">Mechanical</option>
+                <option value="civil">Civil</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="hobbies">Hobbies:</label>
+
+            <input type="radio" name="hobbies" >
+            <label for="hobbies">Playing Chess</label>
+
+            <input type="radio" name="hobbies" >
+            <label for="hobbies">Reading Books</label>
+            <br>
+            <br>
+
+            <h2 style="color: red;">Address</h2>
+            <textarea name="address" id="adr"></textarea>
+            <br>
+            <br><br>
+
+            <label for="resume">Attach Resume:</label>
+            <input type="file">
+            <br>
+            <br>
+
+            <input id="btn" type="button" value="Submit">
+            <br>
+            <br>
+            <br>
+            
+        </form>
+    </div>
+</body>
+</html>
